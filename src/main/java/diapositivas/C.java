@@ -12,7 +12,7 @@ public class C {
             numero = teclado.nextInt();
         }while(numero < 1 || numero > 10);
 
-        System.out.println("En número romano: ");
+        System.out.println(numero + " En número romano: ");
         switch (numero){
             case 1:
                 System.out.println("I");
