@@ -5,8 +5,13 @@ import java.util.Scanner;
 public class C {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Introduce un número del 1 al 10");
-        int numero = teclado.nextInt();
+        int numero;
+
+        do{
+            System.out.println("Introduce un número del 1 al 10");
+            numero = teclado.nextInt();
+        }while(numero < 1 || numero > 10);
+
         System.out.println("En número romano: ");
         switch (numero){
             case 1:
